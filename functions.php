@@ -232,6 +232,7 @@ add_action( 'widgets_init', 'th_blank_widgets_init' );
 function th_blank_scripts(){
 	// enqueue css
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	wp_enqueue_style( 'poppins-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', '', TH_BLANK_THEME_VERSION );
 	wp_enqueue_style( 'animate', TH_BLANK_THEME_URI . 'css/animate.css','',TH_BLANK_THEME_VERSION);
 	wp_enqueue_style( 'th-blank-menu', TH_BLANK_THEME_URI . 'css/th-blank-menu.css','',TH_BLANK_THEME_VERSION);	
 	wp_enqueue_style( 'th-blank-main-style', TH_BLANK_THEME_URI . 'css/style.css','',TH_BLANK_THEME_VERSION);
