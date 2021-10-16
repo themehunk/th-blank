@@ -101,7 +101,6 @@ define( 'TH_BLANK_THEME_SETTINGS', 'th-blank-settings' );
                                                  'thumbnail_image_width' => 320,
                                              ) );
          // Recommend plugins
-        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'th_blank_setup' );
