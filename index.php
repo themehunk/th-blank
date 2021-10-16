@@ -14,7 +14,7 @@
 get_header();
 $th_blank_sidebar = get_post_meta( $post->ID, 'th_blank_sidebar_dyn', true );
 ?>
-<div id="content" class="page-content blog">
+<div id="content" class="page-content blog <?php echo esc_attr($th_blank_sidebar); ?>">
             <div class="container">
             <div class="content-wrap" >
                     <div class="main-area">
@@ -44,8 +44,14 @@ $th_blank_sidebar = get_post_meta( $post->ID, 'th_blank_sidebar_dyn', true );
                            </div> <!-- end primary-content-wrap-->
                         </div><!-- end primary primary-content-area-->
                         <?php 
+                        if(th_blank_is_blog()){
+                               if(get_post_meta(get_option( 'page_for_posts' ),$th_blank_sidebar)!='no-sidebar'){
+                                            get_sidebar();
+                                    }
+                        }elseif($th_blank_sidebar != 'no-sidebar' ){
                             get_sidebar();
-                        ?><!-- end sidebar-primary  sidebar-content-area-->
+                            }
+                 ?><!-- end sidebar-primary  sidebar-content-area-->
                     </div> <!-- end main-area -->
                 </div> <!-- end content-wrap -->
             </div> 

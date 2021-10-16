@@ -1,7 +1,12 @@
 <?php
 get_header();
+if(empty(get_post_meta( $post->ID, 'th_blank_sidebar_dyn', true ))){
+$th_blank_sidebar = 'right';
+}else{
+$th_blank_sidebar = get_post_meta( $post->ID, 'th_blank_sidebar_dyn', true );
+}
 ?>
-<div id="content" class="page-content thunk-single-post">
+<div id="content" class="page-content thunk-single-post <?php echo esc_attr($th_blank_sidebar); ?>">
             <div class="container">
         	<div class="content-wrap" >
         			<div class="main-area">
@@ -40,8 +45,10 @@ get_header();
                                         ?>
                            </div> <!-- end primary-content-wrap-->
         				</div> <!-- end primary primary-content-area-->
-        				<?php          
-                get_sidebar();             
+        				<?php  
+                        if($th_blank_sidebar != 'no-sidebar' ):        
+                            get_sidebar();  
+                            endif;           
                  ?><!-- end sidebar-primary  sidebar-content-area-->
         			</div> <!-- end main-area -->
         		</div>  <!-- end content-wrap -->
