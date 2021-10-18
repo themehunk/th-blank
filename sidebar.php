@@ -1,17 +1,14 @@
 <?php
 /**
- * Primary sidebar
+ * The template for displaying sidebar.
  *
- * @package  Th Blank
- * @since 1.0.0
+ * @package Th Blank
  */
-?>
-<div id="sidebar-primary" class="sidebar-content-area">
-  <div class="sidebar-main">
-    <?php
-    if ( is_active_sidebar('sidebar-1') ){
-    dynamic_sidebar('sidebar-1');
-     }
-      ?>
-  </div>  <!-- sidebar-main End -->
-</div> <!-- sidebar-primary End -->                
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * This file is here to avoid the Deprecated Message for sidebar by wp-includes/theme-compat/sidebar.php.
+ */
