@@ -442,7 +442,7 @@ code, kbd, pre, samp {
 }
 body{
     color:#1c1d1e;
-    background:#eee;
+    background: #FFF;
     font-style: normal;
     font-size: 13px;
     line-height:21px;
@@ -698,7 +698,7 @@ text-align:center;
     background: transparent;
 }
 .desktop-main-header{
-  padding: 0 15px;
+  padding: 0;
 }
 .below-header-bar{
   position: relative;
@@ -883,7 +883,7 @@ flex: inherit;
 .main-area{
   display: flex;
   position: relative;
-  padding: 0 15px;
+  padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -903,11 +903,6 @@ flex: inherit;
 }
 .no-sidebar .primary-content-area{
   width: 100%;
-}
-.container > .content-wrap{
-  background: #FFF;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 .th-boxed-layout .container > .content-wrap{
   padding-top: 15px;
@@ -5844,7 +5839,7 @@ line-height: 34px;
     text-align:left;
 }
 article.thunk-article,article.thunk-post-article,.single article,.no-results.not-found,#error-404{
-background:#fff;
+background: transparent;
 margin-bottom:30px;
 }
 .thunk-post-img-wrapper{
