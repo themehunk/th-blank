@@ -96,8 +96,7 @@ td {
   vertical-align: baseline;
 }
 html {
-  font-family: "Poppins";
-  font-weight: 400;
+  font-family: 'Poppins';font-weight: 400;
    -webkit-text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
    text-rendering: optimizeLegibility;
@@ -450,8 +449,7 @@ body{
     letter-spacing:0.8px;
     margin: 0;
     padding: 0;
-    font-family:'Poppins';
-    font-weight: 400;
+    font-family:'Poppins';font-weight: 400;
     font-weight: inherit;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; 
@@ -627,7 +625,7 @@ background: #ff3377;
     padding-right: 10px;
     width: 100%;
     box-sizing: border-box;
-    max-width: 1300px;
+    max-width: 960px;
 }
 .container.belowfooter{
   background: #f7f8f9;
@@ -894,7 +892,7 @@ flex: inherit;
     box-sizing: border-box;
 }
 .primary-content-area{
-    width: 78%;
+    width: 100%;
     box-sizing: border-box;
 }
 .main-area.active-left-sidebar .primary-content-area{
@@ -6025,7 +6023,7 @@ display: flex;
 }
 .thunk-related-links .nav-links  a{
 font-size:15px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 color:#626060;
 }

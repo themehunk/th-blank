@@ -26,7 +26,7 @@
 
 	<?php wp_body_open();?>
 
-<div id="page" class="th-blank-site <?php echo esc_attr($page_post_meta_sidebar);?>">
+<div id="page" class="th-blank-site">
 	<header>
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'th-blank' ); ?></a>
         <?php do_action( 'th_blank_main_header' ); ?> 
