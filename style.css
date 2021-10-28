@@ -387,7 +387,6 @@ td, th {
 
 th,th a,dt,b, strong{
     font-family: 'Poppins';font-weight: 700;
-    font-weight: 700;
 }
 table, td, th {
     border: 1px solid rgba(0,0,0,.1);
@@ -1032,7 +1031,6 @@ font-size: 1.1rem;
 color: #fff;
     font-size: 13px;
     font-family: 'Poppins';font-weight: 700;
-    font-weight: 700;
 }
 .header-support-icon a.compare {
 margin-left:10px;
@@ -1460,7 +1458,6 @@ position: relative;
     color: #111;
     font-size:16px;
     font-family: 'Poppins';font-weight: 700;
-    font-weight: 700;
 }
 .thunk-slider-content-bar .slider-cat-title{
     line-height: 19px;
@@ -2554,7 +2551,6 @@ vertical-align: middle;
 .cart-contents .cart-total{
     display: block;
     font-family: 'Poppins';font-weight: 700;
-    font-weight: 700;
     font-size: 1rem;
     margin-left: 15px;
 }
